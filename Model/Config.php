@@ -11,10 +11,10 @@ use Magento\Store\Model\StoreManagerInterface;
 
 class Config
 {
-    const XML_PATH_ORDER_STATUS = 'carriers/fastdelivery/order_status_to_email';
-    const XML_PATH_STORE_NAME = 'carriers/fastdelivery/store_name';
-    const XML_PATH_STORE_SENDER_EMAIL = 'carriers/fastdelivery/store_sender_email';
-    protected $_code = 'fastdelivery';
+    const XML_PATH_ORDER_STATUS = 'carriers/expressdelivery/order_status_to_email';
+    const XML_PATH_STORE_NAME = 'carriers/expressdelivery/store_name';
+    const XML_PATH_STORE_SENDER_EMAIL = 'carriers/expressdelivery/store_sender_email';
+    protected $_code = 'expressdelivery';
     private $scopeConfig;
     private $storeManager;
     protected $urlInterface;

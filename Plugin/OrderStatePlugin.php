@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Vb\FastDelivery\Plugin;
 
 use \Psr\Log\LoggerInterface;
-use Js\FastDelivery\Model\Config;
-use Js\FastDelivery\Helper\Email;
-use Magento\Sales\Model\ResourceModel\Order\Status\Collection as OrderStatusCollection;
+use Vb\FastDelivery\Model\Config;
+use Vb\FastDelivery\Helper\Email;
+use \Magento\Sales\Model\ResourceModel\Order\Status\Collection as OrderStatusCollection;
 use \Magento\Sales\Model\ResourceModel\Order\Status\CollectionFactory as StatusCollectionFactory;
 
 class OrderStatePlugin
@@ -21,8 +21,8 @@ class OrderStatePlugin
 
     public function __construct(
         LoggerInterface $logger,
-        Config $config,
-        Email $helper,
+        \Vb\FastDelivery\Model\Config $config,
+        \Vb\FastDelivery\Helper\Email $helper,
         OrderStatusCollection $orderStatusCollection,
         StatusCollectionFactory $statusCollectionFactory
     )
